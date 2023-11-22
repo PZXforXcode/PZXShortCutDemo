@@ -2,8 +2,8 @@
 iOS SiriKit 快捷指令 使用的Demo
 # iOS App SiriKit 快捷方式 功能
 
-## 演示视频
-
+## 演示效果
+![copy_907191FF-E04C-40A5-AA15-3B73C45A4287.GIF](https://upload-images.jianshu.io/upload_images/19409325-59a95e8b7812ca0c.GIF?imageMogr2/auto-orient/strip)
 
 
 
@@ -91,3 +91,4 @@ https://developer.apple.com/videos/play/wwdc2022/10170/
 
 
 ### Demo地址
+https://github.com/PZXforXcode/PZXShortCutDemo
