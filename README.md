@@ -5,25 +5,27 @@ iOS SiriKit 快捷指令 使用的Demo
 ## 演示视频
 
 
-<video src="/Users/pengzuxin/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/f3e73100913883b82d980cd3d489d028/Message/MessageTemp/700b3589e8bd36a004d201dd3d2b7c27/Video/3b3aee3caa72b8816ccf6f815a293a0f_0_1700624614.mp4"></video>
+
 
 ## 开发步骤
 
 ### 1.创建Intents Extension
 
-![image-20231122131257679](/Users/pengzuxin/Library/Application Support/typora-user-images/image-20231122131257679.png)
+![image-20231122131257679.png](https://upload-images.jianshu.io/upload_images/19409325-cf59a8254e2dcb5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 按照上图步骤进行创建
 
 ### 2.创建CUSTOM INTENTS
 
-![image-20231122131422977](/Users/pengzuxin/Library/Application Support/typora-user-images/image-20231122131422977.png)
+![image-20231122131422977.png](https://upload-images.jianshu.io/upload_images/19409325-a70cfe35af4f5122.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 按照上图创建一个CUSTOM INTENTS，每个CUSTOM INTENTS都是一个快捷指令，在iOS系统的快捷指令App内能找到它
 
 旁边的Title 和 Descripition 分别是显示在快捷指令的标题和描述
 
-![image-20231122131544846](/Users/pengzuxin/Library/Application Support/typora-user-images/image-20231122131544846.png)
+
+![image-20231122131544846.png](https://upload-images.jianshu.io/upload_images/19409325-d2bd624e0cb4eebc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 Response部分，可以设置需要的参数，以及成功和失败的文字
 
@@ -59,11 +61,14 @@ success则会弹出一个弹窗
 
 ##### 如果用的SceneDelegate
 
-<img src="/Users/pengzuxin/Library/Application Support/typora-user-images/image-20231122131957130.png" alt="image-20231122131957130" style="zoom:50%;" />
+
+![image-20231122131957130.png](https://upload-images.jianshu.io/upload_images/19409325-1c2cc56286a92fe3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 ### 5.快捷创建此快捷指令
 
-<img src="/Users/pengzuxin/Library/Application Support/typora-user-images/image-20231122132051029.png" alt="image-20231122132051029" style="zoom:50%;" />在手机内的快捷指令创建好指令后，通过共享 - 复制icloud地址后得到共享地址
+![image-20231122132051029.png](https://upload-images.jianshu.io/upload_images/19409325-ee4ce976a07b2272.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+在手机内的快捷指令创建好指令后，通过共享 - 复制icloud地址后得到共享地址
 
 然后再App中用OpenUrl打开即可
 
@@ -86,4 +91,3 @@ https://developer.apple.com/videos/play/wwdc2022/10170/
 
 
 ### Demo地址
-
