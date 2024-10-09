@@ -57,12 +57,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
         
         print("TK421: Continue type = ", userActivity.activityType,"ok")
-
-        guard let windowScene = scene as? UIWindowScene else { return }
+        guard scene is UIWindowScene else { return }
         if (userActivity.activityType == NSStringFromClass(PZXShowLabelIntent.self)) {
             
-            
-            
+            if let intent = userActivity.interaction?.intentResponse as? PZXShowLabelIntentResponse {
+                        // 打印出 showLabel 参数
+                        if let showLabel = intent.showLabel {
+                            print("showLabel 参数是：\(showLabel)")
+                        } else {
+                            print("没有找到 showLabel 参数")
+                        }
+                    } else {
+                        print("无法将 intent 转换为 PZXShowLabelIntent")
+                    }
+
         } else if (userActivity.activityType == NSStringFromClass(PZXBBIntent.self)) {
             
 

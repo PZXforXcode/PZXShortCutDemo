@@ -15,7 +15,11 @@ import Intents
 // "<myApp> John saying hello"
 // "Search for messages in <myApp>"
 
-class IntentHandler: INExtension,PZXShowLabelIntentHandling,PZXBBIntentHandling {
+class IntentHandler: INExtension,PZXShowLabelIntentHandling,PZXBBIntentHandling,PZXKKKIntentHandling{
+
+    
+
+    
     
     override func handler(for intent: INIntent) -> Any {
         // This is the default implementation.  If you want different objects to handle different intents,
@@ -54,6 +58,13 @@ class IntentHandler: INExtension,PZXShowLabelIntentHandling,PZXBBIntentHandling 
         
         
     }
+    func handle(intent: PZXKKKIntent) async -> PZXKKKIntentResponse {
+        let userActivity = NSUserActivity(activityType: NSStringFromClass(PZXKKKIntent.self))
+        let response = PZXKKKIntentResponse(code: .continueInApp, userActivity: nil)
+//        completion(response)
+        return response
+    }
+
 
     /**
      confirm 方法：

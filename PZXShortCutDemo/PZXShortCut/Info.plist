@@ -16,6 +16,7 @@
 				<string>INSendMessageIntent</string>
 				<string>INSetMessageAttributeIntent</string>
 				<string>PZXBBIntent</string>
+				<string>PZXKKKIntent</string>
 				<string>PZXShowLabelIntent</string>
 			</array>
 		</dict>
